@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body{
+  background-color: black;
+  color: white;
+  font-family: 'Rubik';
+  font-size: 16px;
+  font-weight: 400;
+  
+}
+
+header{
+  margin-bottom: 91px;
+}
+
+.container__nav-web{
+  background-color: black;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.container__nav-web a{
+  display: flex;
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+.container__nav-web a:hover{
+  background-color: #202020;
+}
+
+header .container__profile-card{
+  text-align: center;
+  margin: 0 57px;
+  clear: both;
+}
+
+button {
+  background-color: black;
+  color: white;
+  margin: 15px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  float: right;
+}
+
+.go--up {
+  cursor: pointer;
+  border-radius: 50%;
+  position: fixed;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  bottom: 0;
+  right: 0;
+}
+
+.go--up a{
+  color: black;
+  text-decoration: none;
+  display: flex;
+  padding: 10px 10px;
+  justify-content: center;
+}
+
+.go--up:hover{
+  background-color: #202020;
+}
+
+.go--up a:hover{
+  color: white;
+}
+
+button i{
+  font-size: 40px;
+}
+
+.container__profile-card-person{
+  margin-bottom: 16px;
+}
+
+.container__profile-card-person img{
+  margin-bottom: 37px;
+  margin-top: 50px;
+}
+
+.container__profile-card-person h1{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.container__profile-card-person h3{
+  font-size: 25px;
+  font-weight: 500;
+  color: #ADADAD;
+}
+
+.container__profile-card__icons img{
+  margin: 0 10px;
+}
+
+h2{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 42px;
+}
+
+.container__section-about{
+  margin: 0 50px;
+  margin-bottom: 91px;
+}
+
+.container__section-about p{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ADADAD;
+}
+
+.container__section-habilities{
+  margin: 0 20px;
+  margin-bottom: 91px;
+  padding: 0 100px;
+}
+
+.container__section-habilities__icons{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 10px auto;
+  gap: 20px;
+}
+
+.container__section-habilities p{
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  width: 200px auto;
+}
+
+.container__section-habilities__icons__img{
+  width: 100px;
+  height: 100px;
+  background-color: #202020;
+  border-radius: 50%;
+  margin: 20px auto;
+  gap: 100px;
+}
+
+.container__section-habilities__icons__img img{
+  position: relative;
+  left: 25px;
+  top: 25px;
+  width: 50%;
+}
+
+.container__section-habilities__icons__elements{
+  margin: 0 10px;
+}
+
+.container__section-experience{
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 91px;
+}
+
+.container__section-experience .container__section-experience__experiences{
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  margin: 0 50px;
+}
+
+.container__section-experience__experiences .year_1, 
+.container__section-experience__experiences .year_2, 
+.container__section-experience__experiences .year_3{
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.container__section-experience__experiences .year_1{
+  grid-row: 1/3;
+  border-bottom: 1px solid #ADADAD;
+}
+
+.container__section-experience__experiences .year_2{
+  grid-row: 3/5;
+  border-bottom: 1px solid #ADADAD;
+}
+
+.container__section-experience__experiences .year_3{
+  grid-row: 5/7;
+}
+.container__section-experience__experiences .company_1{
+  border-bottom: 1px solid #ADADAD;
+}
+
+.container__section-experience__experiences .company_2{
+  border-bottom: 1px solid #ADADAD;
+}
+.container__section-experience__experiences .especiality_1, 
+.container__section-experience__experiences .especiality_2, 
+.container__section-experience__experiences .especiality_3,
+.container__section-experience__experiences .company_1, 
+.container__section-experience__experiences .company_2, 
+.container__section-experience__experiences .company_3{
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: -1;
+}
+
+.container__section-experience__experiences .container__section-experience__experiences__year{
+  color: #ADADAD;
+  font-weight: 400;
+}
+
+.container__section-experience__experiences .container__section-experience__experiences__especiality{
+  font-weight: 600;
+}
+
+.container__section-experience__experiences .container__section-experience__experiences__company{
+  color: #ADADAD;
+}
+
+.container__section-portfolio{
+  margin-bottom: 91px;
+}
+
+.container__section-portfolio .container__section-portfolio__img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container__section-contact{
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 50px;
+  max-width: 500px;
+  margin: 30px auto;
+  margin-bottom: 91px;
+}
+
+.container__section-contact p{
+  width: 200px auto;
+  color: #ADADAD;
+}
+
+.container__section-contact__phone{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__section-contact__email{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__section-contact .icon{
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.container__section-contact .icon img{
+  position: relative;
+  width: 50%;
+}
+
+footer{
+  text-align: center;
+  color: #ADADAD;
+  margin-bottom: 30px;
+}
+
+.show--menu{
+  display: contents;
+}
+
+@media  (min-width: 700px){
+  body{
+    font-size: 18px;
+    font-weight: 400;
+    
+  }
+
+  h2{
+    font-size: 30px;
+  }
+
+  header ul{
+    display: contents;
+  }
+
+  .container__profile-card-person h1{
+    font-size: 60px;
+    font-weight: 600;
+  }
+
+  .container__profile-card-person img{
+    margin-top: 100px;
+    content: url(Imágenes/Rectangle\ 45.png);
+  }
+
+  .container__section-experience__experiences{
+    margin: 0 100px;
+  }
+
+  .container__section-habilities__icons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+    max-width: 700px;
+  }
+
+  .container__nav-web{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  a{
+    display: flex;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+
+  .navbar--list{
+    display: none;
+  }
+}
